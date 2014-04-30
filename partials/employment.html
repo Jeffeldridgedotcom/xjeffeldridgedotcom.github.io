@@ -1,0 +1,51 @@
+<h1 class="page-header">Employment History</h1>
+
+<div class="row placeholders">
+    <div ng-repeat="job in History" class="col-xs-6 col-sm-12 placeholder">
+
+        <h2>{{job.where}}
+            <small>
+                {{job.start | date :'MMM yyyy'}} -
+                <span ng-show="job.end===''">present</span>
+                <span ng-show="job.end!=''">{{job.end | date :'MMM yyyy'}}</span>
+                <!--<span ng-show="$index >= ShowLast" style="font-size: xx-small">(see more)</span>-->
+            </small>
+        </h2>
+        <div>
+            <h4>
+                {{job.position}}&nbsp;
+                <small ng-switch="job.type">
+                    <span ng-switch-when="p">(Permanent)</span>
+                    <span ng-switch-when="c">(Contract)</span>
+
+                </small>
+            </h4>
+            <p ng-repeat="desc in job.desc track by $index" class="jobdesc">{{desc}}</p>
+
+            <div class="col-xs-6 col-sm-4 placeholder">
+                <h4>Skills</h4>
+                <ul>
+                    <li ng-repeat="skill in job.skills">{{skill}}</li>
+                </ul>
+            </div>
+
+            <div class="col-xs-6 col-sm-4 placeholder">
+                <div ng-show="job.business.length > 0">
+                    <h4>Business</h4>
+                    <ul>
+                        <li ng-repeat="business in job.business track by $index">{{business}}</li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr ng-show="$index != $last">
+
+        </div>
+
+    </div>
+
+</div>
+
+<!--<a ng-show="SeeingAll() === false" ng-click="onSeeAll()">See all...</a>-->
+<p class="text-center"><a href="#">Back to top</a></p>
+

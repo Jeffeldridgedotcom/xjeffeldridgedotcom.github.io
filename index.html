@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" ng-app>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="favicon.png">
+
+    <title>Jeff Eldridge</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="app/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/cover.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.13/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.13/angular-animate.min.js"></script>
+
+</head>
+
+<body>
+
+    <div ng-controller="CoverController">
+
+        <img ng-src="images/covers/blurred/{{Background}}" style="position: fixed" class="img-responsive">
+
+        <div class="site-wrapper" style="position: fixed; z-index: 10;">
+
+            <div class="site-wrapper-inner">
+
+                <div class="cover-container">
+
+                    <div class="masthead clearfix">
+                        <div class="inner">
+                            <h2 class="masthead-brand">Jeff Eldridge</h2>
+                            <ul class="nav masthead-nav">
+                                <li class="active"><a href="index.html">Home</a></li>
+                                <li><a href="cv.html#/profile">CV</a></li>
+                                <li><a href="portfolio.html">Portfolio</a></li>
+                                <!--<li><a href="contact.html">Contact</a></li>-->
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="inner cover">
+                        <!--<h1 class="cover-heading">Javascript, Node.js, Angular.js</h1>-->
+                        <!--<h2 class="cover-heading">Web Design, Video Game Design</h2>-->
+                        <!--<p class="lead"><i>Also</i> Go, C#, C++, SQL</p>-->
+                        <h1 class="cover-heading"><a href="mailto:jeff@rathmoreit.com">jeff@rathmoreit.com</a></h1>
+                        <p class="lead">+353 87 916 2652</p>
+                            <h1>
+                                <span class="label label-success">
+                                    <span ng-show="Availability===''">Available for hire</span>
+                                    <span ng-show="Availability!=''">Available from {{Availability}}</span>
+                                </span>
+                            </h1>
+                        </p>
+
+                    </div>
+
+                    <div class="mastfoot">
+                        <div class="inner">
+                            <p>&copy; Jeff Eldridge, 2014. All Rights Reserved.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="bower_components/underscore/underscore.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="app/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="js/docs.min.js"></script>
+<script src="js/CoverController.js"></script>
+</body>
+</html>

@@ -1,0 +1,125 @@
+angular.callbacks._0({
+    "employment" : [
+
+        {
+            "where" : "Rathmore IT Solutions",
+            "type" : "p",
+            "position" : "Consultant",
+            "start" : [2010, 11, 1],
+            "end" : "",
+            "desc" : ["Lorem ipsum..."],
+            "business" : ["Education"],
+            "skills" : ["Javascript", "Node.js", "Angular.js", "C#", "ASP.NET"]
+        },
+        {
+            "where" : "Microsoft European Product Development Centre",
+            "type" : "p",
+            "position" : "Software Design Engineer",
+            "start" : [1999, 9, 1],
+            "end" : [2010, 10, 22],
+            "desc" : ["Lorem ipsum..."],
+            "business" : ["Software Localization"],
+            "skills" : ["C++", "C#", "SQL", "ASP.NET", "Javascript", "Perl"]
+        },
+        {
+            "where" : "Natwest Magex UK",
+            "type" : "c",
+            "position" : "Lead Programmer",
+            "start" : [1999, 3, 1],
+            "end" : [1999, 9, 1],
+            "desc" : ["Lorem ipsum..."],
+            "business" : ["e-Commerce micro-transactions"],
+            "skills" : ["C++", "MFC"]
+        },
+        {
+            "where" : "Deutsche Bank",
+            "type" : "c",
+            "position" : "Programmer",
+            "start" : [1998, 10, 1],
+            "end" : [1999, 2, 28],
+            "desc" : ["Lorem ipsum..."],
+            "business" : ["Repurchase Agreements (Repos)"],
+            "skills" : ["C++", "MFC"]
+        },
+        {
+            "where" : "Lehman Brothers",
+            "type" : "c",
+            "position" : "Programmer",
+            "start" : [1997, 7, 1],
+            "end" : [1998, 9, 1],
+            "desc" : ["Lorem ipsum..."],
+            "business" : ["Convertible bonds, Option Agreements"],
+            "skills" : ["C++", "MFC", "SQL", "Visual Basic 6", "ASP"]
+        },
+        {
+            "where" : "Natwest Markets",
+            "type" : "c",
+            "position" : "Programmer",
+            "start" : [1996, 8, 1],
+            "end" : [1997, 6, 1],
+            "desc" : ["Lorem ipsum..."],
+            "business" : ["Commericial banking back-office trade processing"],
+            "skills" : ["C++", "MFC", "SQL"]
+        },
+        {
+            "where" : "Motability Finance Limited",
+            "type" : "c",
+            "position" : "Programmer",
+            "start" : [1995, 1, 1],
+            "end" : [1996, 7, 1],
+            "desc" : ["Lorem ipsum..."],
+            "business" : ["Application Security"],
+            "skills" : ["C++", "MFC", "COM", "OLE", "SQL"]
+        },
+        {
+            "where" : "Centrefile Limited",
+            "type" : "c",
+            "position" : "Programmer, Database Analyst",
+            "start" : [1993, 5, 1],
+            "end" : [1994, 12, 1],
+            "desc" : ["Lorem ipsum..."],
+            "business" : ["Retail Banking Application Security"],
+            "skills" : ["C++", "MFC", "SQL"]
+        },
+        {
+            "where" : "Microsoft UK",
+            "type" : "c",
+            "position" : "Consultant",
+            "start" : [1993, 2, 1],
+            "end" : [1993, 4, 1],
+            "desc" : ["Lorem ipsum..."],
+            "business" : ["Customer management solutions"],
+            "skills" : ["Visual Basic 2", "Access", "SQL"]
+        },
+        {
+            "where" : "Midland Bank",
+            "type" : "c",
+            "position" : "Programmer",
+            "start" : [1992, 6, 1],
+            "end" : [1992, 12, 1],
+            "desc" : ["Lorem ipsum..."],
+            "business" : ["Retail banking"],
+            "skills" : ["OS/2", "C", "Embedded SQL"]
+        },
+        {
+            "where" : "4-Sight Limited",
+            "type" : "c",
+            "position" : "Programmer",
+            "start" : [1992, 2, 1],
+            "end" : [1992, 5, 31],
+            "desc" : ["Lopem ipsum..."],
+            "business" : ["Windows Fax Software"],
+            "skills" : ["C", "Windows DDK"]
+        },
+        {
+            "where" : "IBM UK Laboratories Limited",
+            "type" : "p",
+            "position" : "Systems Programmer",
+            "start" : [1989, 9, 1],
+            "end" : [1991, 9, 31],
+            "desc" : ["Lorem ipsum..."],
+            "business" : ["IBM OS/2"],
+            "skills" : ["OS/2", "C", "C++"]
+        }
+    ]
+})
