@@ -1,14 +1,13 @@
-<h1 class="page-header">Audio</h1>
+<div ng-repeat="section in Audios">
+    <h2 style="border-bottom: 3px solid #f0ad4e; padding-bottom: 2px;">{{section.head}}</h2>
+    <div ng-repeat="item in section.items">
+       <h3>{{item.title}}</h3>
+       <p>{{item.desc}}</p>
+       <audio controls>
+           <source ng-src="{{item.oggtrack}}" type="audio/ogg" />
+           <source ng-src="{{item.mp3track}}" type="audio/mp3" />
+       </audio>
+    </div>
+</div>
 
-<div ng-repeat="sound in Soundcloud">
-    <h3>{{sound.head}}</h3>
-    <p>{{sound.desc}}</p>
-    <a class="btn btn-warning" ng-click='onPlay($index)'>
-        <span class="glyphicon glyphicon-play"></span>
-    </a>
-</div>
-<br />
-<br />
-<div style="display: block">
-    <iframe width="100%" height="166" scrolling="no" frameborder="no" ng-src="{{Track}}"></iframe>
-</div>
+

@@ -31,5 +31,8 @@ function CoverController ($scope, $timeout) {
 
     $scope.Availability = "mid-August 2014";
 
+    $scope.Name = "Jeff Eldridge";
+    $scope.Email = "jeff@rathmoreit.com";
+    $scope.PhoneNumber = "+353 87 916 2652";
 
 }

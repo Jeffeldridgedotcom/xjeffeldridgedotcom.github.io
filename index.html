@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="author" content="Jeff Eldridge">
     <link rel="shortcut icon" href="favicon.png">
 
     <title>Jeff Eldridge</title>
@@ -28,7 +28,7 @@
 
 <body>
 
-    <div ng-controller="CoverController">
+    <div ng-cloak ng-controller="CoverController">
 
         <img ng-src="images/covers/blurred/{{Background}}" style="position: fixed" class="img-responsive">
 
@@ -36,41 +36,39 @@
 
             <div class="site-wrapper-inner">
 
-                <div class="cover-container">
+                <div class="cover-container" >
 
-                    <div class="masthead clearfix">
-                        <div class="inner">
-                            <h2 class="masthead-brand">Jeff Eldridge</h2>
-                            <ul class="nav masthead-nav">
-                                <li class="active"><a href="index.html">Home</a></li>
-                                <li><a href="cv.html#/profile">CV</a></li>
-                                <li><a href="portfolio.html">Portfolio</a></li>
-                                <!--<li><a href="contact.html">Contact</a></li>-->
-                            </ul>
-                        </div>
+                    <!--<div class="masthead clearfix">-->
+                        <!--<div class="inner">-->
+                            <!--<h2 class="masthead-brand">Jeff Eldridge</h2>-->
+                            <!--<ul class="nav masthead-nav">-->
+                                <!--<li class="active"><a href="index.html">Home</a></li>-->
+                                <!--<li><a href="cv.html#/profile">CV</a></li>-->
+                                <!--<li><a href="portfolio.html">Portfolio</a></li>-->
+                                <!--&lt;!&ndash;<li><a href="contact.html">Contact</a></li>&ndash;&gt;-->
+                            <!--</ul>-->
+                        <!--</div>-->
+
                     </div>
 
                     <div class="inner cover">
-                        <!--<h1 class="cover-heading">Javascript, Node.js, Angular.js</h1>-->
-                        <!--<h2 class="cover-heading">Web Design, Video Game Design</h2>-->
-                        <!--<p class="lead"><i>Also</i> Go, C#, C++, SQL</p>-->
-                        <h1 class="cover-heading"><a href="mailto:jeff@rathmoreit.com">jeff@rathmoreit.com</a></h1>
-                        <p class="lead">+353 87 916 2652</p>
-                            <h1>
-                                <span class="label label-success">
-                                    <span ng-show="Availability===''">Available for hire</span>
-                                    <span ng-show="Availability!=''">Available from {{Availability}}</span>
-                                </span>
-                            </h1>
-                        </p>
+
+                        <h1 class="cover-heading">{{Name}}</h1>
+                        <h2><a href="mailto:{{Email}}">{{Email}}</a></h2>
+                        <h3>{{PhoneNumber}}</h3>
+
+                        <h1 class="lead">
+                            <a href="cv.html" class="btn btn-lg btn-success">Find Out More...</a>
+                        </h1>
+
 
                     </div>
 
-                    <div class="mastfoot">
-                        <div class="inner">
-                            <p>&copy; Jeff Eldridge, 2014. All Rights Reserved.</p>
-                        </div>
-                    </div>
+                    <!--<div class="mastfoot">-->
+                        <!--<div class="inner">-->
+                            <!--<p>&copy; Jeff Eldridge, 2014. All Rights Reserved.</p>-->
+                        <!--</div>-->
+                    <!--</div>-->
 
                 </div>
 
