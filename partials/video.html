@@ -1,12 +1,10 @@
-<h1 class="page-header">Video</h1>
-
-<div ng-repeat="section in Videos">
-    <h2 style="border-bottom: 3px solid #f0ad4e; padding-bottom: 2px;">{{section.head}}</h2>
+<div ng-repeat="section in Videos" class="section">
+    <h2>{{section.head}}</h2>
     <div ng-repeat="item in section.items">
         <h3>{{item.title}}</h3>
         <p>{{item.desc}}</p>
         <video controls>
-            <source ng-src="{{item.track}}" type="audio/ogg" />
+            <source ng-src="{{item.track}}"/>
         </video>
     </div>
 </div>
